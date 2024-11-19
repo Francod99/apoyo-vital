@@ -1,0 +1,214 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #03f570;
+}
+
+/* Logo */
+.logo img {
+    height: 50px; /* Tamaño del logo; ajusta según sea necesario */
+    width: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Animación suave */
+}
+/* Contenido principal */
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del formulario */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-container h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* Estilo del formulario */
+.inscription-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inscription-form label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.inscription-form input,
+.inscription-form select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.inscription-form input:focus,
+.inscription-form select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Botón de envío */
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    .inscription-form input,
+    .inscription-form select {
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilos generales del botón */
+.form-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #007bff; /* Azul principal */
+    color: white; /* Texto blanco */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover: Cambia el color y escala ligeramente el botón */
+.form-link:hover {
+    background: #0056b3; /* Azul oscuro */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+}
+
+/* Focus: Agrega un borde visible para accesibilidad */
+.form-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Resaltado */
+}
+
+/* Active: Botón presionado */
+.form-link:active {
+    transform: scale(0.95); /* Reduce ligeramente el tamaño */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce la sombra */
+}
+ /* Estilos para asegurar que el footer esté abajo */
+ html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Empuja el footer hacia abajo si el contenido es corto */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+footer .social-icons a img {
+    width: 30px;
+}
+
+footer p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .content {
+        padding: 10px; /* Reduce el padding para pantallas pequeñas */
+    }
+    
+    h2 {
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+    }
+}

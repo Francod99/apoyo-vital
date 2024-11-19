@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Apoyo Vital</title>
+
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .logo img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del logo al pasar el ratón */
+    filter: brightness(1.2); /* Aumenta el brillo al pasar el ratón */
+}
+
+/* Alineación de enlaces de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #00cc66; /* Color verde */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff; /* Cambia a blanco al pasar el ratón */
+}
+
+
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+/* Logo */
+/* Logo */
+.logo img {
+    height: 50px; /* Tamaño del logo; ajusta según sea necesario */
+    width: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Animación suave */
+}
+
+
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #03f570;
+}
+
+        /* Sección de contacto */
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            margin-top: 0;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        /* Formulario */
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+
+        /* Mapa */
+        .map {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        footer {
+    background-color: #030202;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img {
+    transition: transform 0.3s ease;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a img {
+    filter: brightness(0) invert(1); /* Asegura íconos blancos sobre fondo oscuro */
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <nav class="navbar-container">
+                <a href="index.html" class="logo">
+                      <img src="imagenes/Untitled_logo_1_free-file.jpg" alt="Logo Apoyo Vital">
+                  </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="susbcripcion.html">Suscripción</a></li>
+                <li><a href="programas.html">Programas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Contacto</h2>
+        <p>Ponte en contacto con nosotros para más información o para resolver tus dudas.</p>
+    
+        <div class="contact-layout">
+            <!-- Información de contacto -->
+            <div class="contact-info">
+                <h3>Información de Contacto</h3>
+                <p><strong>Teléfono:</strong> +34 123 456 789</p>
+                <p><strong>Email:</strong> contacto@apoyovital.com</p>
+                <p><strong>Dirección:</strong> Belgrano, Buenos Aires, Argentina</p>
+            </div>
+    
+            <!-- Mapa -->
+            <iframe 
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.884906676459!2d-58.456186525191556!3d-34.56144196168212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59f1df93717%3A0xe203bc518b216d91!2sBelgrano%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1697399282234!5m2!1ses!2sar" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    
+        <!-- Formulario de Email -->
+        <div class="email-form">
+            <h3>Envíanos tu Email</h3>
+            <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Tu email" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <style>
+    /* Contenedor general */
+    .content {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Diseño de dos columnas */
+    .contact-layout {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    
+    /* Información de contacto */
+    .contact-info {
+        flex: 1;
+    }
+    
+    .contact-info h3 {
+        margin-bottom: 10px;
+    }
+    
+    .contact-info p {
+        margin: 5px 0;
+    }
+    
+    /* Mapa */
+    .map {
+        flex: 1;
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+    }
+    
+    /* Formulario de Email */
+    .email-form {
+        margin-top: 20px;
+        padding: 20px;
+        background: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+    
+    .email-form h3 {
+        margin-bottom: 15px;
+    }
+    
+    .email-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .email-form label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    .email-form input {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .email-form button {
+        background-color: black;
+        color: white;
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .email-form button:hover {
+        background-color: green;
+    }
+    </style>
+    <footer style="background-color: #333; color: white; padding: 20px 0; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+            <!-- Logo -->
+            <img src="imagenes/Untitled_logo_1_free-file.jpg"Logo de la Página" style="width: 100px; margin-bottom: 10px;">
+    
+            <!-- Redes Sociales -->
+            <div style="display: flex; gap: 15px;">
+                <a href="https://www.facebook.com/tu-pagina" target="_blank">
+                    <img src="facebook-icon.png" alt="Facebook" style="width: 30px;">
+                </a>
+                <a href="https://www.twitter.com/tu-pagina" target="_blank">
+                    <img src="twitter-icon.png" alt="Twitter" style="width: 30px;">
+                </a>
+                <a href="https://www.instagram.com/tu-pagina" target="_blank">
+                    <img src="instagram-icon.png" alt="Instagram" style="width: 30px;">
+                </a>
+                <a href="https://www.linkedin.com/tu-pagina" target="_blank">
+                    <img src="linkedin-icon.png" alt="LinkedIn" style="width: 30px;">
+                </a>
+            </div>
+    
+            <!-- Copyright -->
+            <p style="margin-top: 15px; font-size: 14px;">
+                © 2024 Tu Página. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

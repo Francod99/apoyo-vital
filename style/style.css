@@ -1,0 +1,182 @@
+/* Variables CSS */
+:root {
+    --font-primary: 'Poppins', sans-serif;
+    --color-text-primary: #ffffff;
+    --color-bg-primary: #2e7d32; /* Verde oscuro */
+    --color-bg-navbar: rgba(10, 33, 235, 0.9); /* Azul Serenity */
+    --color-bg-overlay: rgba(0, 0, 0, 0.4);
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+
+
+/* Navbar Fija con Efecto de Scroll */
+/* Ajustes de la barra de navegación */
+/* Barra de navegación fija */
+.navbar {
+    background-color: #0066cc; /* Color azul */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;       /* Hace que la barra sea fija */
+    top: 0;                /* Posición en la parte superior de la página */
+    left: 0;
+    width: 100%;           /* Hace que ocupe el ancho completo de la página */
+    z-index: 1000;         /* Asegura que esté por encima de otros elementos */
+}
+
+body {
+    padding-top: 80px; /* Añade un relleno superior para evitar que el contenido se oculte debajo de la barra */
+}
+
+
+
+
+/* Efecto hover en el logo */
+.logo img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del logo al pasar el ratón */
+    filter: brightness(1.2); /* Aumenta el brillo al pasar el ratón */
+}
+
+/* Alineación de enlaces de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #00cc66; /* Color verde */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff; /* Cambia a blanco al pasar el ratón */
+}
+
+
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+/* Logo */
+
+.logo img {
+    height: 50px; /* Tamaño del logo; ajusta según sea necesario */
+    width: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Animación suave */
+}
+
+
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #03f570;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-bg-overlay);
+}
+.form-link {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: #030202;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img {
+    transition: transform 0.3s ease;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a img {
+    filter: brightness(0) invert(1); /* Asegura íconos blancos sobre fondo oscuro */
+}
+@media (max-width: 768px) {
+    .content {
+        padding: 10px; /* Reduce el padding para pantallas pequeñas */
+    }
+    
+    h2 {
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+    }
+}
+@media (max-width: 768px) {
+    .content {
+        padding: 10px; /* Reduce el padding para pantallas pequeñas */
+    }
+    
+    h2 {
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+    }
+}

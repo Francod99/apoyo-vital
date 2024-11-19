@@ -1,0 +1,99 @@
+/* Variables CSS para colores, fuentes y tamaños */
+:root {
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Roca One', sans-serif;
+    --color-text-primary: #000000;
+    --color-bg-primary: #ffffff;
+    --color-bg-overlay: rgba(0, 0, 0, 0.5);
+    --color-bg-navbar: rgba(96, 125, 139, 0.9); /* Azul Serenity con transparencia */
+    --color-text-navbar: #FFFFFF;
+    --hero-img-url: url('/mnt/data/A_serene,_professional_scene_of_a_psychologist_sit.png');
+}
+
+/* Reset básico */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+body {
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--color-bg-navbar);
+    padding: 1rem 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-text-navbar);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li + li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: var(--color-text-navbar);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-image: var(--hero-img-url);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: var(--color-text-navbar);
+    margin-top: 80px; /* Espacio para evitar solapamiento con el header */
+}
+
+.hero-overlay {
+    background: var(--color-bg-overlay);
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-family: var(--font-secondary);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.content {
+    padding: 4rem 2rem;
+    text-align: center;
+}

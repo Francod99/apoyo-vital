@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes de Suscripción - Apoyo Vital</title>
+    <style>
+        /* General */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: rgba(217, 228, 222, 0.822);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .logo img {
+    height: 50px; /* Tamaño del logo; ajusta según sea necesario */
+    width: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Animación suave */
+}
+
+        /* Contenido de planes */
+        .plans-content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .plans-content h2 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .plans-content p {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .plans {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .plan {
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .plan h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .plan p {
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .plan ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+            text-align: left;
+        }
+
+        .plan ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .plan ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #007bff;
+            font-size: 1.2rem;
+        }
+
+        .plan button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .plan button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        footer .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        footer .social-icons a img {
+            width: 30px;
+        }
+
+        footer p {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+    .content {
+        padding: 10px; /* Reduce el padding para pantallas pequeñas */
+    }
+    
+    h2 {
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="imagenes/Untitled_logo_1_free-file.jpg" alt="Logo Apoyo Vital">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="susbcripcion.html">Suscripción</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Planes de Suscripción -->
+    <section class="plans-content">
+        <h2>Elige tu Plan de Suscripción</h2>
+        <p>Selecciona el plan que mejor se adapte a tus necesidades para comenzar tu camino hacia el bienestar mental.</p>
+
+        <div class="plans">
+            <!-- Plan Básico -->
+            <div class="plan">
+                <h3>Plan Básico</h3>
+                <p>Ideal para quienes buscan acceso básico a programas y recursos de bienestar mental.</p>
+                <ul>
+                    <li>Acceso a programas en línea básicos.</li>
+                    <li>Charlas y módulos introductorios.</li>
+                    <li>1 sesión mensual de terapia.</li>
+                </ul>
+                <button>Seleccionar Plan</button>
+            </div>
+
+            <!-- Plan Estándar -->
+            <div class="plan">
+                <h3>Plan Estándar</h3>
+                <p>Para quienes desean un acceso completo a programas y más sesiones personalizadas.</p>
+                <ul>
+                    <li>Acceso a programas en línea completos.</li>
+                    <li>Charlas y módulos interactivos avanzados.</li>
+                    <li>2 sesiones mensuales de terapia.</li>
+                    <li>Acceso a recursos educativos exclusivos.</li>
+                </ul>
+                <button>Seleccionar Plan</button>
+            </div>
+
+            <!-- Plan Premium -->
+            <div class="plan">
+                <h3>Plan Premium</h3>
+                <p>El plan más completo, con acceso ilimitado a todos los recursos y apoyo integral.</p>
+                <ul>
+                    <li>Acceso ilimitado a programas en línea especializados.</li>
+                    <li>Charlas y módulos interactivos premium.</li>
+                    <li>Sesiones de terapia ilimitadas.</li>
+                    <li>Soporte personalizado y acceso a grupos de apoyo.</li>
+                    <li>Recursos exclusivos para el bienestar diario.</li>
+                </ul>
+                <button>Seleccionar Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <img src="imagenes/Untitled_logo_1_free-file.jpg" alt="Logo de la Página">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/tu-pagina" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com/tu-pagina" target="_blank">
+                <img src="twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/tu-pagina" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/tu-pagina" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </div>
+        <p>© 2024 Apoyo Vital. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
